@@ -385,6 +385,7 @@ header .menu #ham_menu:checked + label + .side_bar {
 
 .text_box h2 {
     font-size: 3.6rem;
+    letter-spacing: -5px;
 }
 
 .text_box .text_btn {
@@ -1199,6 +1200,10 @@ footer {
 }
 
 @media only screen and (max-width: 780px) {
+    .text_box h2 {
+        letter-spacing: -2px;
+    }
+
     .brand ul {
         flex-wrap: wrap;
     }
