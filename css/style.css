@@ -235,7 +235,6 @@ header .menu #ham_menu + label span {
     position: absolute;
     width: 100%;
     height: 2px;
-    border-radius: 50%;
     background: #3e3e3e;
     transition: all 0.35s;
 }
@@ -270,6 +269,7 @@ header .menu #ham_menu:checked + label span:nth-child(3) {
 header .menu #ham_menu:checked + label + .side_bar {
     left: 0;
 }
+
 /*side bar*/
 
 .side_bar {
@@ -385,7 +385,6 @@ header .menu #ham_menu:checked + label + .side_bar {
 
 .text_box h2 {
     font-size: 3.6rem;
-    letter-spacing: -5px;
 }
 
 .text_box .text_btn {
@@ -882,6 +881,7 @@ footer {
 .footer .f_box ul {
     display: inline-block;
     margin-left: 60px;
+    vertical-align: 4px;
 }
 
 .footer .f_box ul li {
@@ -902,12 +902,16 @@ footer {
     margin: 0;
 }
 
+.footer .f_box ul:first-of-type li:first-child {
+    padding-left: 0;
+}
+
 .footer .f_box ul.f_side_menu li:first-child {
     font-weight: 500;
 }
 
 .footer .f_box ul.f_side_menu li:last-child {
-    margin-right: 0;
+    padding-right: 0;
 }
 
 .footer .f_box address {
@@ -977,6 +981,7 @@ footer {
     }
 
     /* 메인비쥬얼 반응형*/
+
     .main {
         height: auto;
     }
@@ -1017,6 +1022,9 @@ footer {
     }
 
     /* 브랜드영역 반응형 */
+    .brand {
+        height: auto;
+    }
 
     .brand ul li {
         width: 120px;
@@ -1027,7 +1035,7 @@ footer {
 
     #content {
         margin-top: 120px;
-        padding: 40px;
+        padding: 0 40px;
     }
 
     /*컨텐츠타이틀 */
@@ -1178,6 +1186,7 @@ footer {
     .footer .f_box ul {
         display: block;
         margin: 1rem 0 0;
+        vertical-align: 0;
     }
 
     .footer .f_box ul li {
@@ -1220,6 +1229,7 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 3rem 1.5rem;
     }
 
     .contact_box h4 {
@@ -1240,17 +1250,38 @@ footer {
         font-size: 0.9rem;
         color: #bfcae1;
     }
+
+    .footer .f_box ul:last-of-type li:first-child {
+        padding-left: 0;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .text_box {
         width: 400px;
+        padding: 0 2rem;
     }
 
     .text_box h2 {
-        font-size: 1.9em;
+        font-size: 1.6em;
     }
 
+    .content_cont {
+        margin-top: 80px;
+    }
+
+    .content_cont .cont_text a {
+        margin-top: 2rem;
+    }
+
+    .tab_cont,
+    .og_deta {
+        padding: 80px 2rem;
+    }
+
+    .count {
+        padding: 2rem 0;
+    }
     .count ul {
         flex-direction: column;
     }
@@ -1268,7 +1299,31 @@ footer {
         font-size: 2.5rem;
     }
 
+    .contact {
+        padding: 0 2rem;
+    }
+
+    .contact_box h4 {
+        font-size: 1.8rem;
+    }
+
+    .together {
+        padding: 80px 2rem 300px;
+    }
+
     .company {
         margin-right: 0;
+    }
+
+    footer {
+        padding: 0 2rem;
+    }
+
+    .footer .f_sns {
+        flex-direction: column;
+    }
+
+    .footer .f_sns .sns_facebook {
+        margin: 0 0 0.5rem 0;
     }
 }
