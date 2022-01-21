@@ -1280,19 +1280,21 @@ footer {
     }
 
     .tab_cont,
-    .og_deta {
+    .og_deta,
+    .count {
         padding: 80px 2rem;
     }
 
-    .count {
-        padding: 2rem 0;
-    }
     .count ul {
         flex-direction: column;
     }
 
     .count ul li {
         margin-bottom: 4rem;
+    }
+
+    .count ul li:last-of-type {
+        margin-bottom: 0;
     }
 
     .count ul li .ct_tit {
